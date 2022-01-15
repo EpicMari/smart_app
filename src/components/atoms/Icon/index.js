@@ -1,6 +1,7 @@
 import React from "react";
 import {
   StyledIconAdd,
+  StyledIconArrow,
   StyledIconHome,
   StyledIconRemove,
   StyledIconSleep,
@@ -16,6 +17,8 @@ const Icon = ({ iconType }) => {
         return <StyledIconAdd />;
       case listTypesIcon.remove:
         return <StyledIconRemove />;
+      case listTypesIcon.arrow:
+        return <StyledIconArrow />;
       default:
         return <StyledIconSleep />;
     }

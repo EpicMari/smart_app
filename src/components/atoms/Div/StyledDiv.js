@@ -15,4 +15,17 @@ export const StyledDiv = styled.div`
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     `}
+
+  ${({ header }) =>
+    header &&
+    css`
+      display: grid;
+      grid-template-rows: 80px;
+      height: 80px;
+      max-width: 1000px;
+      background-color: ${({ theme }) => theme.colors.orange};
+      border-radius: 0 0 25px 25px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    `}
 `;

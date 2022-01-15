@@ -1,7 +1,8 @@
 import React from "react";
+import SetTimerTemplate from "../components/templates/SetTimerTemplate";
 
 const SetTimer = () => {
-  return <div>set timer</div>;
+  return <SetTimerTemplate />;
 };
 
 export default SetTimer;

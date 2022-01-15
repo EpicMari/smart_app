@@ -1,7 +1,8 @@
 import React from "react";
+import RemoveRoomTemplate from "../components/templates/RemoveRoomTemplate";
 
 const RemoveRoom = () => {
-  return <div>remove room</div>;
+  return <RemoveRoomTemplate />;
 };
 
 export default RemoveRoom;

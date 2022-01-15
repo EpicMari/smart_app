@@ -1,7 +1,8 @@
 import React from "react";
+import AddRoomTemplate from "../components/templates/AddRoomTemplate";
 
 const AddRoom = () => {
-  return <div>adhgfhfghfghfghfghfm</div>;
+  return <AddRoomTemplate />;
 };
 
 export default AddRoom;
