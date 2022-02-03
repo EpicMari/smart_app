@@ -14,6 +14,7 @@ export const StyledDiv = styled.div`
       border-radius: 25px 25px 0 0;
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      background-color: ${({ theme }) => theme.colors.white};
     `}
 
   ${({ header }) =>
@@ -36,5 +37,13 @@ export const StyledDiv = styled.div`
       place-content: center;
       height: calc(100vh - 160px);
       width: 100vw;
+    `}
+
+    ${({ addRoomTemplate }) =>
+    addRoomTemplate &&
+    css`
+      height: 100vh;
+      width: 100vw;
+      background-color: ${({ theme }) => theme.colors.lightGrey};
     `}
 `;
