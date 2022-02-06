@@ -12,6 +12,8 @@ export const themes = {
     regular: "400",
   },
   fontSizes: {
+    xxs: "0.8rem",
+    xs: "1rem",
     s: "1.2rem",
     l: "1.4rem",
     xl: "1.6rem",

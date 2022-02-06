@@ -6,6 +6,7 @@ const Heading = ({
   headingType,
   header__heading,
   timeSlider__heading,
+  roomsListItem__heading,
 }) => {
   const _renderHeading = () => {
     switch (headingType) {
@@ -14,7 +15,9 @@ const Heading = ({
       case "h2":
         return <H2>{children}</H2>;
       case "h3":
-        return <H3>{children}</H3>;
+        return (
+          <H3 roomsListItem__heading={roomsListItem__heading}>{children}</H3>
+        );
       case "h4":
         return <H4>{children}</H4>;
       case "h5":

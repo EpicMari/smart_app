@@ -5,6 +5,11 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    background-color: #f88340;
+}
+
 * {
     margin: 0;
     padding: 0;

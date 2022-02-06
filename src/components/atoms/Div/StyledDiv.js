@@ -46,4 +46,10 @@ export const StyledDiv = styled.div`
       width: 100vw;
       background-color: ${({ theme }) => theme.colors.lightGrey};
     `}
+
+    ${({ homeTemplate }) =>
+    homeTemplate &&
+    css`
+      min-height: calc(100vh - 80px);
+    `}
 `;
