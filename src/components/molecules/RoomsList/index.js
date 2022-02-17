@@ -1,15 +1,16 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, { useContext } from "react";
 import Ul from "../../atoms/Ul";
 import Li from "../../atoms/Li";
 import RoomsListItem from "../RoomsListItem";
+import AppContext from "../../../context";
 
-const RoomsList = ({ rooms }) => {
+const RoomsList = () => {
+  const { rooms } = useContext(AppContext);
   return (
     <Ul roomsList>
       {rooms.map((room) => {
         return (
-          <Li roomList__item>
+          <Li key={room.id} roomList__item>
             <RoomsListItem {...room} />
           </Li>
         );
@@ -18,8 +19,4 @@ const RoomsList = ({ rooms }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  rooms: state.rooms,
-});
-
-export default connect(mapStateToProps)(RoomsList);
+export default RoomsList;
