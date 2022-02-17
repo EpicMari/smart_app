@@ -3,4 +3,7 @@ export const listTypesIcon = {
   add: "add",
   remove: "remove",
   arrow: "arrow",
+  settings: "settings",
+  temperature: "temperature",
+  humidity: "humidity",
 };

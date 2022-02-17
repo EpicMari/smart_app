@@ -17,4 +17,19 @@ export const StyledParagraph = styled.p`
       font-size: ${({ theme }) => theme.fontSizes.xs};
       margin-bottom: 15px;
     `}
+
+    ${({ singleRoomHeader__text }) =>
+    singleRoomHeader__text &&
+    css`
+      color: ${({ theme }) => theme.colors.lightGrey};
+      margin-left: 1rem;
+    `}
+
+    ${({ singleRoomHeader__iconDescription }) =>
+    singleRoomHeader__iconDescription &&
+    css`
+      color: ${({ theme }) => theme.colors.white};
+      margin-left: 10px;
+      text-transform: uppercase;
+    `}
 `;

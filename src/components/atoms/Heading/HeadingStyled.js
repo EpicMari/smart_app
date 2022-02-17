@@ -11,7 +11,10 @@ export const H1 = styled.h1`
       align-self: center;
     `}
 `;
-export const H2 = styled.h2``;
+export const H2 = styled.h2`
+  color: ${({ theme }) => theme.colors.white};
+  font-size: ${({ theme }) => theme.fontSizes.xxl};
+`;
 export const H3 = styled.h3`
   ${({ roomsListItem__heading }) =>
     roomsListItem__heading &&

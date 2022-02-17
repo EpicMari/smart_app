@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
       background-color: transparent;
       width: 3rem;
       height: 3rem;
-      margin-left: 1rem;
+      margin-left: 0.5rem;
       grid-area: 1 / 1;
       justify-self: start;
       align-self: center;

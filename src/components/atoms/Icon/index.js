@@ -3,8 +3,11 @@ import {
   StyledIconAdd,
   StyledIconArrow,
   StyledIconHome,
+  StyledIconHumidity,
   StyledIconRemove,
+  StyledIconSettings,
   StyledIconSleep,
+  StyledIconTemperature,
 } from "./StyledIcon";
 import { listTypesIcon } from "../../../utils/listTypes";
 
@@ -19,6 +22,12 @@ const Icon = ({ iconType }) => {
         return <StyledIconRemove />;
       case listTypesIcon.arrow:
         return <StyledIconArrow />;
+      case listTypesIcon.settings:
+        return <StyledIconSettings />;
+      case listTypesIcon.temperature:
+        return <StyledIconTemperature />;
+      case listTypesIcon.humidity:
+        return <StyledIconHumidity />;
       default:
         return <StyledIconSleep />;
     }

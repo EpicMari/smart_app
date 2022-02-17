@@ -7,13 +7,18 @@ const Heading = ({
   header__heading,
   timeSlider__heading,
   roomsListItem__heading,
+  singleRoomHeader__heading,
 }) => {
   const _renderHeading = () => {
     switch (headingType) {
       case "h1":
         return <H1 header__heading={header__heading}>{children}</H1>;
       case "h2":
-        return <H2>{children}</H2>;
+        return (
+          <H2 singleRoomHeader__heading={singleRoomHeader__heading}>
+            {children}
+          </H2>
+        );
       case "h3":
         return (
           <H3 roomsListItem__heading={roomsListItem__heading}>{children}</H3>

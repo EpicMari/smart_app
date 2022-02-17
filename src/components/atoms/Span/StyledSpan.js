@@ -14,4 +14,10 @@ export const StyledSpan = styled.span`
     css`
       font-size: 0.9rem;
     `}
+
+    ${({ singleRoomHeader__valueBold }) =>
+    singleRoomHeader__valueBold &&
+    css`
+      font-weight: 700;
+    `}
 `;
